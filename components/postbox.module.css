@@ -1,0 +1,126 @@
+.postBox {
+  justify-content: center;
+  display: flex;
+  align-items: top;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.postBox img {
+  border-radius: 0px;
+  box-shadow: 3px 3px 3px rgb(131, 131, 131);
+  line-height: 0;
+}
+
+.pageNums {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.pageNums a {
+  color: rgb(97, 97, 97);
+  font-weight: 500;
+  font-size: 25px;
+  border-radius: 5px;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+}
+
+.pageNums a:hover {
+  color: #000;
+  text-decoration: underline;
+  cursor: pointer;
+  background-color: #d6dedf;
+}
+
+.highlighted {
+  text-decoration: underline;
+  color: #000;
+  font-weight: bold;
+}
+
+.postLink {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.post {
+  border-radius: 5px;
+  min-width: 500px;
+  max-width: 500px;
+  min-height: 500px;
+  max-height: 500px;
+  position: relative;
+}
+
+@media only screen and (max-width: 640px) {
+  .post {
+    min-width: 320px;
+    max-width: 320px;
+    min-height: 320px;
+    max-height: 320px;
+  }
+}
+
+.postText {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+.postText a {
+  color: white;
+}
+
+.tag {
+  margin-top: 5px;
+  border: none;
+  background: none;
+  font-size: small;
+  padding: 0%;
+}
+
+.tag a {
+  padding-right: 7px;
+  color: #fff;
+}
+
+.tag a:hover {
+  padding-right: 7px;
+  color: #272727;
+  background-color: #d6dedf;
+  text-align: center;
+}
+
+.description {
+  font-size: 16px;
+}
+
+.descriptionLight {
+  font-size: 16px;
+  color: white;
+}
+
+.description a {
+  color: #000;
+}
+
+.description a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+.description a:visited {
+  color: #000;
+}

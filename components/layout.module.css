@@ -1,0 +1,71 @@
+.container {
+  padding: 0 5px;
+  margin: 1rem auto 6rem;
+}
+
+.container img {
+  border-radius: 5px;
+}
+
+.container video {
+  border-radius: 5px;
+}
+
+.fixedText {
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  top: 7vmax;
+}
+
+.fixedText h1 {
+  font-weight: 800;
+  letter-spacing: -0.05rem;
+  margin: 1rem 0;
+  line-height: 1.2;
+  text-shadow: 0px 3px 3px black;
+  font-family: "Open Sans", sans-serif;
+}
+
+.headerText {
+  font-size: 5vmin;
+}
+
+.statsText {
+  font-size: 4vmin;
+}
+
+.headerBar {
+  z-index: 2;
+  height: 50px;
+  background-color: #3587a4;
+  box-shadow: 3px 3px 5px 0px rgb(0, 0, 0, 0.4);
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  transition: 0.3s;
+}
+
+.linkBar {
+  z-index: 2;
+  display: flex;
+  position: fixed;
+  left: 310px;
+  gap: 15px;
+  transition: 0.3s;
+}
+
+.linkBar a {
+  color: rgb(255, 255, 255);
+}
+
+@media only screen and (max-width: 780px) {
+  .linkBar {
+    display: none;
+  }
+}
+
+.backToHome {
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,33 @@
+{
+  "private": true,
+  "scripts": {
+    "prebuild": "node prebuild.js",
+    "dev": "npm run prebuild && next dev",
+    "build": " next build",
+    "export": "next build && next export",
+    "start": "next start",
+    "lint": "next lint",
+    "check-url": "node scripts/url_checker.js",
+    "prettier": "npx prettier --write .",
+    "precommit": "npm run prettier && npm run prebuild && npm run build"
+  },
+  "dependencies": {
+    "date-fns": "^2.11.1",
+    "fuse.js": "^6.6.2",
+    "next": "^13.1.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "@types/react": "^18.0.27",
+    "@typescript-eslint/eslint-plugin": "^5.53.0",
+    "@typescript-eslint/parser": "^5.53.0",
+    "eslint": "^8.5.0",
+    "eslint-config-next": "^13.1.6",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-react": "^7.32.2",
+    "prettier": "2.8.2",
+    "typescript": "^4.9.5"
+  }
+}
